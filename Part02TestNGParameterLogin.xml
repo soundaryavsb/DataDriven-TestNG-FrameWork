@@ -5,7 +5,7 @@
 		<parameter name="PassWord" value="admin1" />
 		<classes>
 			<class
-				name="part02_Parameters_LoginTestCases.Class01CorrectUserName" />
+				name="part02_Parameters_LoginTestCases.Part02_Class01CorrectUserName" />
 		</classes>
 	</test>
 	<test  name="Correct Password Test Case">
@@ -13,7 +13,7 @@
 		<parameter name="PassWord" value="admin123" />
 		<classes>
 			<class
-				name="part02_Parameters_LoginTestCases.Class02CorrectPassword" />
+				name="part02_Parameters_LoginTestCases.Part02_Class02CorrectPassword" />
 		</classes>
 	</test>
 	<test name="Both Correct Test Case">
@@ -21,7 +21,7 @@
 		<parameter name="PassWord" value="admin123" />
 		<classes>
 			<class
-				name="part02_Parameters_LoginTestCases.Class03BothCorrect" />
+				name="part02_Parameters_LoginTestCases.Part02_Class03BothCorrect" />
 		</classes>
 	</test>
 	<test name="Both Incorrect Test Case">
@@ -29,7 +29,7 @@
 		<parameter name="PassWord" value="admin1" />
 		<classes>
 			<class
-				name="part02_Parameters_LoginTestCases.Class04BothIncorrect" />
+				name="part02_Parameters_LoginTestCases.Part02_Class04BothIncorrect" />
 		</classes>
 	</test>
 </suite>
