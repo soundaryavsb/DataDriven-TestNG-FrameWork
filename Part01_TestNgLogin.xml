@@ -2,10 +2,10 @@
 <suite name="Login Suite">
 <test name="Login Test cases">
 <classes>
-<class name="part01_Introduction_LoginTestCases.Class01CorrectUserName"></class>
-<class name="part01_Introduction_LoginTestCases.Class02CorrectPassword"></class>
-<class name="part01_Introduction_LoginTestCases.Class03BothCorrect"></class>
-<class name="part01_Introduction_LoginTestCases.Class04BothIncorrect"></class>
+<class name="part01_Introduction_LoginTestCases.Part01_Class01CorrectUserName"></class>
+<class name="part01_Introduction_LoginTestCases.Part01_Class02CorrectPassword"></class>
+<class name="part01_Introduction_LoginTestCases.Part01_Class03BothCorrect"></class>
+<class name="part01_Introduction_LoginTestCases.Part01_Class04BothIncorrect"></class>
 </classes>
 </test>
 </suite>
