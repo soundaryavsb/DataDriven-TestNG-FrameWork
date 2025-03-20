@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Login Parameter Test Suite">
+	<test name="Correct User Name Test Case">
+		<parameter name="UserName" value="Admin" />
+		<parameter name="PassWord" value="admin1" />
+		<classes>
+			<class
+				name="part02_Parameters_LoginTestCases.Class01CorrectUserName" />
+		</classes>
+	</test>
+	<test  name="Correct Password Test Case">
+		<parameter name="UserName" value="Admin1" />
+		<parameter name="PassWord" value="admin123" />
+		<classes>
+			<class
+				name="part02_Parameters_LoginTestCases.Class02CorrectPassword" />
+		</classes>
+	</test>
+	<test name="Both Correct Test Case">
+		<parameter name="UserName" value="Admin" />
+		<parameter name="PassWord" value="admin123" />
+		<classes>
+			<class
+				name="part02_Parameters_LoginTestCases.Class03BothCorrect" />
+		</classes>
+	</test>
+	<test name="Both Incorrect Test Case">
+		<parameter name="UserName" value="Admin1" />
+		<parameter name="PassWord" value="admin1" />
+		<classes>
+			<class
+				name="part02_Parameters_LoginTestCases.Class04BothIncorrect" />
+		</classes>
+	</test>
+</suite>
