@@ -1,14 +1,16 @@
-package part01_Introduction_LoginTestCases;
+package part02_Parameters_LoginTestCases;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class Class02CorrectPassword {
 	@Test
-	public void loginWithCorrectPassword() throws InterruptedException
+	@Parameters({"UserName","PassWord"})
+	public void loginWithCorrectPassword(String UserName_Data,String PassWord_Data) throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\chrome Driver\\chromedriver-win32-v134\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
@@ -19,10 +21,10 @@ public class Class02CorrectPassword {
 		
 		WebElement UserName=driver.findElement(By.name("username"));
 //		UserName.click();
-		UserName.sendKeys("Admin1");
+		UserName.sendKeys(UserName_Data);
 		
 		WebElement Password=driver.findElement(By.xpath("//*[@name='password']"));
-		Password.sendKeys("admin123");
+		Password.sendKeys(PassWord_Data);
 		
 		Thread.sleep(2000);
 		
